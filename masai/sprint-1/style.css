@@ -1,0 +1,285 @@
+#main_page{
+    border: 1px solid black;
+    margin: 10px;
+    padding:10px;
+    height: 100%;
+    width: 97%;
+}
+#header_title{
+    border: 1px solid green;
+    color: white;
+    background-color: #1C23AA;
+    height: fit-content;
+}
+.logo{
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+    margin: 8px 0px 8px 100px;
+    float: left;
+}
+#title{
+    border: 1px solid red;
+    width: 87%;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    
+}
+.navigation{
+    padding: 0px 100px 0px 100px;
+    border: 1px solid green;
+    background-color: #7279E5;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navigation > div{
+    border: 1px solid black;
+    height: 34px;
+    width: 100%;
+    border-radius: 34px;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 10px 5px 10px;
+    padding-top: 0px;
+}
+.navigation div:hover{
+    text-decoration: none;
+    background-color: #5CD1E0;
+    color: white;
+}
+.heading-default{
+    font-size: 50px;
+    font-family: 'Adamina', serif;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 0px 10px 0px;
+}
+.text-default{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0px 200px 0px 200px;
+    word-spacing: 2px;
+    line-height: 40px;
+    text-align: center;
+    
+}
+.footer{
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+/*  Index.html page codes */
+#content{
+    border: 1px solid salmon;
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(3,220px);
+    padding: 10px 0px 10px 0px;
+    
+}
+#home_pic{
+    border: 1px solid blue;
+    border-radius: 4px;
+    grid-area: 1/1/6/7;
+    background-image:url(resources/8311460762_8f833fe88e_b\ -\ Copy.jpg);
+    background-size: cover;
+}
+#home_title{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 65px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    color: white;
+    grid-area: 1/4/1/7;
+}
+#home_content{
+    grid-area: 2/5/3/6;
+    margin-top: 100px;
+    text-align: right;
+    font-size: 40px;
+    color: rgb(7, 84, 252);
+}
+
+#info div:nth-child(2), #info div:nth-child(6){
+    background-color:#A4A9F6 ;
+}
+/* Equipment.html codes*/
+
+#equipment_content{
+    border: 1px solid blue;
+    margin: 10px 100px 10px 100px;
+}
+.equipment_content_1,.equipment_content_2, .equipment_content_3{
+    border: 1px solid red;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    
+}
+.equipment_content_1 > #hockey_stick{
+    border: 1px solid green;
+    width: 20%;
+    background-image: url("resources/Glasgow_2014_-_Hockey_(15)_Taine_Paton_(cropped).jpg");
+    background-size: cover;
+    
+}
+#hockey_stick + #hockey_stick_content, #hockey_ball + #hockey_ball_content,#hockey_gear + #hockey_gear_content{
+    border: 1px solid blue;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    width: 75%;
+    word-spacing: 2px;
+    text-align: center;
+}
+.equipment_content_2 > #hockey_ball{
+    border: 1px solid green;
+    width: 20%;
+    background-image: url("resources/Balle_de_hockey_sur_gazon_avec_pièce_de_5_francs\ -\ Copy.jpg");
+    background-size: cover;
+
+}
+.equipment_content_3 > #hockey_gear{
+    border: 1px solid green;
+    width: 20%;
+    background-image: url("resources/field-hockey-goalie-goal-tender-net.jpg");
+    background-size: cover;
+}
+/* rulesandplay.html codes */
+.rulesandplay{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: auto;
+}
+.rulesandplay div:nth-child(1){
+    grid-area: 1/1/2/2;
+    border: 1px dashed purple;
+    text-align: center;
+}
+#rulesandplay_content{
+    grid-area: 1/2/1/5;
+    border: 1px solid blue;
+    background-color:#A4A9F6;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px;
+    word-spacing: 2px;
+}
+/* awards.html codes*/
+#awards_table{
+    font-size: 20px;
+    border: 1px solid blue;
+    text-align: center;
+    width: fit-content;
+    
+}
+#awards_table > table{
+    border: 1px solid black;
+    
+}
+.gold{
+    background-color: gold;
+}
+.silver{
+    background-color: silver;
+}
+.bronze{
+    background-color: rgb(133, 58, 58);
+}
+
+#awards_content{
+    border: 1px solid red;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#awards_content #award_content1{
+    width: 25%;
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+}
+@media only screen and (max-width: 992px) {
+#home_title{
+    grid-area: 1/1/1/2;
+    font-size: 40px;
+}
+#home_content{
+    display: none;
+}
+.text-default{
+    margin: 0px;
+}
+#home_pic{
+    background-size: cover;
+  
+}
+#content{
+    height: 400px;
+}
+#content #home_pic{
+    height: 400px;
+}
+.text-default{
+    text-align: left;
+}
+#equipment_content{
+
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}
+#hockey_stick + #hockey_stick_content, #hockey_ball + #hockey_ball_content,#hockey_gear + #hockey_gear_content{
+    width: 100%;
+}
+
+
+.equipment_content_1,.equipment_content_2, .equipment_content_3{
+    overflow: scroll;
+    text-align: center;
+    
+    
+}
+.equipment_content_1 > #hockey_stick{
+    border: 1px solid green;
+    width: 0px;
+} 
+.equipment_content_2 > #hockey_ball{
+    border: 1px solid green;
+    width: 0px;
+}
+.equipment_content_3 > #hockey_gear{
+    border: 1px solid green;
+    width: 0px;
+} 
+#rulesandplay_content{
+    grid-area: 2/1/2/5;
+   
+}
+#awards_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+#awards_content #award_content1{
+    width: 75%;
+    text-align: start;
+}
+}
+@media only screen and (max-width: 768px) {
+
+    
+}
+@media only screen and (min-width: 600px) {
+
+} 
+@media only screen and (max-width: 600px) {
+
+} 
+
